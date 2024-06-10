@@ -1,15 +1,19 @@
-import { NavLink } from 'react-router-dom';
+import homeIcon from "../assets/home-icon.png";
+import { Link } from "react-router-dom";
+
 function Navbar() {
-    return (
-<nav>
-<NavLink
-          className={({ isActive }) => (isActive ? 'selected' : '')}
-          to='/'
-        >
-          Home
-        </NavLink>
-</nav>
-    )
+  return (
+    <nav style={{ background: "cornflowerblue", textAlign: "center", padding: "10px 40px" }}>
+      <Link to="/">
+        <img
+          src={homeIcon}
+          alt="home icon"
+          style={{ height: "30px", width: "auto" }}
+        />
+      </Link>
+      
+    </nav>
+  );
 }
 
 export default Navbar;
