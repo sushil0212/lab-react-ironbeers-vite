@@ -45,6 +45,7 @@ const AddBeerPage = () => {
           />
         </div>
         <br />
+        
         <div>
           <label>Tagline:</label>
           <input
